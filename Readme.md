@@ -15,8 +15,10 @@ This is a simple Flask web application that returns a greeting message. The app 
 ##  Project Structure
 
 .
-├── app.py # Main Flask app
+├── app.py # Main Flask app 
+
 ├── Dockerfile # Docker configuration file
+
 └── README.md # You're here!
 
 
@@ -32,10 +34,13 @@ Install Docker from [https://www.docker.com/products/docker-desktop](https://www
 ---
 
 ### Step 2: Build the Docker image
+```
 docker build -t flask-cosc-app .
-
+```
 ### Step 3: Run the container
+```
 docker run -p 5000:5000 flask-cosc-app
+```
 ###  Step 4: Open in browser
 Go to:
 http://localhost:5000
